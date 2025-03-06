@@ -1,4 +1,4 @@
-document.getElementById('myForm').addEventListener('submit', function (event) {
+document.getElementById('myForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
     const name = document.getElementById('name').value;
@@ -14,11 +14,11 @@ document.getElementById('myForm').addEventListener('submit', function (event) {
         }, 4000);
     });
 
-	votingPromise
-	    .then((message) => {
-			alert(message);
-		})
-	    .catch((error) => {
-			alert(error);
-		});
-);
+    votingPromise
+        .then(message => {
+            alert(message);
+        })
+        .catch(error => {
+            alert(error);
+        });
+});
