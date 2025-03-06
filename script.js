@@ -1,8 +1,8 @@
-document.getElementById("voteForm").addEventListener("submit", function (event) {
+document.getElementById('myForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const age = parseInt(document.getElementById("age").value;
+    const name = document.getElementById('name').value;
+    const age = parseInt(document.getElementById('age').value);
 
     const votingPromise = new Promise((resolve, reject) => {
         setTimeout(() => {
@@ -12,13 +12,13 @@ document.getElementById("voteForm").addEventListener("submit", function (event) 
                 reject(`Oh sorry Doe. You aren't old enough.`);
             }
         }, 4000);
-    })
+    });
 
 	votingPromise
 	    .then((message) => {
-			alert(message)
+			alert(message);
 		})
 	    .catch((error) => {
-			alert(error)
+			alert(error);
 		});
-});
+);
